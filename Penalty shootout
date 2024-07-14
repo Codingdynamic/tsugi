@@ -1,0 +1,14 @@
+def penalty_shootout(T, test_cases):
+    results = []
+    for i in range(T):
+        X, Y = test_cases[i]
+        if abs(X - Y) <= 1:
+            results.append("YES")
+        else:
+            results.append("NO")
+    return results
+T = 3
+test_cases = [(1, 2), (3, 0), (1, 1)]
+results = penalty_shootout(T, test_cases)
+for result in results:
+    print(result)
